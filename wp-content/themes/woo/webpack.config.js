@@ -8,7 +8,7 @@ module.exports = {
     ],
     output: {
         path: path.resolve(__dirname, 'assets/'),
-        filename: 'main.js',
+        filename: 'main.min.js',
         publicPath: '/'
     },
     module: {
@@ -57,7 +57,7 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: 'main.css',
+            filename: 'main.min.css',
         })
     ],
 };
