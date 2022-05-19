@@ -1,0 +1,31 @@
+{
+  "name": "emdicode-woo",
+  "version": "1.0.0",
+  "description": "Theme configuration for Wordpress website",
+  "scripts": {
+    "start": "webpack --config webpack.config.dev.js --watch",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js"
+  },
+  "author": {
+    "name": "TuanNDA",
+    "email": "hello@emdicode.com"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 20 versions"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.18.0",
+    "@babel/preset-env": "^7.18.0",
+    "autoprefixer": "^10.4.7",
+    "babel-loader": "^8.2.5",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "cross-env": "^7.0.3",
+    "cssnano": "^5.1.8",
+    "dotenv": "^16.0.1",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.0.24",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
