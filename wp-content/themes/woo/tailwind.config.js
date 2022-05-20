@@ -1,7 +1,12 @@
 module.exports = {
-    content: ['./**/*.php', './src/js/**/*.js'],
+    mode: 'jit',
+    content: [
+        './**/*.php',
+        './**/*.js',
+    ],
     theme: {
         extend: {},
     },
+    variants: {},
     plugins: [],
 }
