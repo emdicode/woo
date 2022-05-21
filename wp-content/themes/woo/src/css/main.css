@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind variants;
+@tailwind screens;
 
 body {
     background: #a7aaad;
