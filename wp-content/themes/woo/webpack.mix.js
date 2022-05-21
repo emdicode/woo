@@ -6,7 +6,7 @@ mix.webpackConfig({
     stats: {
         children: false,
     }
-})
+});
 
 mix.js('src/js/main.js', './assets/main.min.js').extract();
 
