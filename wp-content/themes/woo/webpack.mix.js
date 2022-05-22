@@ -12,10 +12,15 @@ mix.js('src/js/main.js', './assets/main.min.js').extract();
 
 mix.postCss('src/css/main.css', './assets/main.min.css', [
     require('postcss-import')(),
-    require('tailwindcss')('./tailwind.config.js'),
-    require('postcss-nested')(),
-    require('postcss-preset-env')(),
+    require('tailwindcss/nesting')(),
+    require('tailwindcss')(),
+    require('postcss-preset-env')({
+        features: { 'nesting-rules': false },
+    }),
     require('autoprefixer')(),
+    require('cssnano')({
+        enabled: mix.inProduction()
+    }),
 ]);
 
 if (!mix.inProduction()) {
